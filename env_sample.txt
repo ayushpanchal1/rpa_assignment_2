@@ -1,0 +1,5 @@
+name it .env
+
+MAIL_USERNAME=abc@xyz.com
+MAIL_PASSWORD=abcd abcd abcd abcd  
+SECRET_KEY=can_be_anything_as_you_wish

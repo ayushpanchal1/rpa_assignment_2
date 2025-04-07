@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>All Patient Results</h2>
+<a class="btn btn-primary mb-3" href="/add">Add New Result</a>
+<a class="btn btn-secondary mb-3 float-end" href="/logout">Logout</a>
+<table class="table table-bordered">
+    <tr>
+      <th>Name</th><th>Email</th><th>Test</th><th>Result</th><th>Actions</th>
+    </tr>
+    {% for p in patients %}
+    <tr>
+      <td>{{ p.name }}</td>
+      <td>{{ p.email }}</td>
+      <td>{{ p.test_type }}</td>
+      <td>{{ p.result_summary }}</td>
+      <td>
+        <form method="POST" action="/delete/{{ p.id }}" onsubmit="return confirm('Are you sure you want to delete this result?');">
+          <button class="btn btn-sm btn-danger">Delete</button>
+        </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+  
+{% endblock %}

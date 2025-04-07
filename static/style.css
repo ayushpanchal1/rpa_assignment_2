@@ -1,0 +1,68 @@
+body {
+    background-color: #fbeaea;
+    font-family: "Segoe UI", sans-serif;
+    color: #2c2c2c;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #6a1b1b;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.table th {
+    background-color: #6a1b1b;
+    color: white;
+}
+
+.table td {
+    background-color: #fff7f7;
+}
+
+.btn-primary {
+    background-color: #6a1b1b;
+    border-color: #6a1b1b;
+}
+
+.btn-primary:hover {
+    background-color: #8e2424;
+    border-color: #8e2424;
+}
+
+.btn-success {
+    background-color: #b71c1c;
+    border-color: #b71c1c;
+}
+
+.btn-success:hover {
+    background-color: #931515;
+    border-color: #931515;
+}
+
+.btn-danger {
+    background-color: #931515;
+    border-color: #931515;
+}
+
+.btn-danger:hover {
+    background-color: #6a1b1b;
+    border-color: #6a1b1b;
+}
+
+.alert-success, .alert-danger {
+    margin-top: 20px;
+}
+
+a {
+    color: #6a1b1b;
+}
+
+a:hover {
+    color: #8e2424;
+}
